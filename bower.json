@@ -1,0 +1,24 @@
+{
+  "name": "angular-dynforms",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dilumn/dynamic-forms",
+  "authors": [
+    "Dilum Navanjana <dilumnavanjana@gmail.com>"
+  ],
+  "description": "Angular implementation of Dynamic Form generation by a JSON",
+  "main": "dynamic-forms.js",
+  "keywords": [
+    "angular",
+    "form",
+    "dynamic"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "moduleType": []
+}
