@@ -1,12 +1,12 @@
 {
   "name": "angulardynamic-forms",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/dilumn/dynamic-forms",
   "authors": [
     "Dilum Navanjana <dilumnavanjana@gmail.com>"
   ],
   "description": "Angular implementation of Dynamic Form generation by a JSON",
-  "main": "dynamic-forms.js",
+  "main": "formgenerator.js",
   "keywords": [
     "angular",
     "form",
