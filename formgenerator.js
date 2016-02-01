@@ -15,7 +15,6 @@
                 template = template.concat("<div  class='col-md-12 question-block'>");
 
                 template = template.concat("<h5>" + question.question + "</h5>");
-                // template = template.concat("</div>");
 
                 //Switching between question type
                 var contentType = question.type;
@@ -24,40 +23,16 @@
                         template = template.concat("<input type='text'>");
                         break;
                     case 'textarea':
-                        template = template.concat("<text-area questionid=" + i + "> </text-area>");
-                        break;
-                    case 'radio':
-                        template = template.concat("<radio questionid=" + i + "> </radio>");
-                        break;
-                    case 'select':
-                        template = template.concat("<selective questionid=" + i + "> </selective>");
+                        template = template.concat("<textarea></textarea>");
                         break;
                     case 'checkbox':
-                        template = template.concat("<checkbox questionid=" + i + "> </checkbox>");
-                        break;
-                    case 'image':
-                        template = template.concat("<imageview questionid=" + i + "> </imageview>");
-                        break;
-                    case 'signature':
-                        template = template.concat("<signatureview questionid=" + i + "> </signatureview>");
-                        break;
-                    case 'calculatedfield':
-                        template = template.concat("<calculatedfield questionid=" + i + "> </calculatedfield>");
-                        break;
-                    case 'subsection':
-                        template = template.concat("<subsection questionid=" + i + "> </subsection>");
+                        template = template.concat("<input type='checkbox'>");
                         break;
                     case 'datefield':
-                        template = template.concat("<datefield questionid=" + i + "> </datefield>");
+                        template = template.concat("<input type='date'>");
                         break;
                     case 'numberfield':
-                        template = template.concat("<numberfield questionid=" + i + "> </numberfield>");
-                        break;
-                    case 'numberonly':
-                        template = template.concat("<numberonly questionid=" + i + "> </numberonly>");
-                        break;
-                    case 'numericdropdown':
-                        template = template.concat("<numericdropdown questionid=" + i + "> </numericdropdown>");
+                        template = template.concat("<input type='number'>");
                         break;
                 }
                 template = template.concat("</div>");
@@ -86,6 +61,6 @@
         };
     };
     igFormGenerator.$inject = ['$compile', '$timeout'];
-    angular.module('dynamicgenerator').directive('formGenerator', igFormGenerator);
+    angular.module('dynamicgenerator',[]).directive('formGenerator', igFormGenerator);
 
 })(angular);
