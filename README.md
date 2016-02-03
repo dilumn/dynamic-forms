@@ -2,7 +2,7 @@
 
 Angular implementation of Dynamic Forms using a JSON file.
 
-`dynamic-forms makes your life easier to create thousands of Forms for your web application by handeling all of them with a simple json object.
+`dynamic-forms` makes your life easier to create thousands of Forms for your web application by handeling all of them with a simple json object.
 
 Here is a sample json object you have to pass through the `form-generator` directive.
 
@@ -13,20 +13,20 @@ Here is a sample json object you have to pass through the `form-generator` direc
 		"question":"What is your name?"
 	},
 	{
-		"type": "text",
-		"question":"How old are you?"
+		"type": "textarea",
+		"question":"About Yourself"
 	},
 	{
-		"type": "text",
-		"question":"What is your school?"
+		"type": "checkbox",
+		"question":"Agree on terms and conditions"
 	},
 	{
-		"type": "text",
-		"question":"What is your pet's name?"
+		"type": "datefield",
+		"question":"Date of Birth"
 	},
 	{
-		"type": "text",
-		"question":"This is the Last question"
+		"type": "numberfield",
+		"question":"Age"
 	}
 ]
 ```
