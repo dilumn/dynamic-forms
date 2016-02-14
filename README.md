@@ -47,9 +47,9 @@ The old way.
 
 Use
 ---
-As with any other [AngularJS][] module:
+As with any other AngularJS module:
 
-* include the script into your page anywhere after [AngularJS][] itself, using whichever mechanism
+* include the script into your page anywhere after AngularJS itself, using whichever mechanism
     you use for including scripts in your project:
 
 ```html
@@ -62,7 +62,7 @@ As with any other [AngularJS][] module:
     appModule = angular.module('app', ['dynamicgenerator']);
 ```
 
-* create a [form-generator](#the-directive) element anywhere in your page.
+* create a form-generator element anywhere in your page.
 
 ```html
     <form-generator layout="layout"></form-generator>
